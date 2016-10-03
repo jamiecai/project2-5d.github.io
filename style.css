@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+.site-container {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	margin: 0;
+}
+
+.pagename {
+	width: 200px;
+	height: 30px;
+	padding: 5px;
+	margin: 30px 30px;
+	position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+}
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  z-index: 10000000;
+
+}
+.mobile div {
+  display: none;
+  margin-top: 150px;
+}
+.mobile button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  margin-top: 70px;
+  margin-right: 25px;
+  z-index: 10000000;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+  background: transparent;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  list-style: none;
+}
+ a:hover,
+ a:active,
+ a:focus {
+  color: #999;
+}
+.desktop a {
+  background: transparent;
+  text-align: left;
+  padding-top: 10px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  list-style: none;
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+}
+.desktop {
+  display: block;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+.desktop a:first-child {
+  color: lightblue;
+}
+.desktop a:hover {
+  color: #999;
+}
+.desktop ul {
+	padding-left: 35px;
+}
+.desktop a:last-child {
+  border-right: none;
+}
+.greeting-box {
+  width: 80%;
+  height: auto;
+  margin-left: 30px;
+  border: 2px dashed #d6d6d6;
+  margin-top: 20px;
+  padding: 15px;
+  position: relative;
+}
+.greeting-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+}
+.image-gallery-responsive {
+  height: 100%;
+  width: 99%;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  z-index: 0;
+  float: left;
+}
+.image-box-1 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  z-index: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+.image-box-2 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  z-index: 0;
+  overflow: hidden;
+}
+div .image-box-1, 
+    .image-box-2 {
+    border: 1px solid #d6d6d6;
+}
+div .image-box-1:hover,
+    .image-box-2:hover {
+    border: 1px solid #111;
+}
+
+div.image-box-1 img,
+div.image-box-2 img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.desc {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px;
+}
+div.desc:before {
+  content: "desc -- ";
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: ; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 724px) {
+	.desktop a {
+		width: 65px;
+	}
+.image-box-1 {
+  height: 300px;
+  width: 615px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #111;
+  margin: 5px;
+  z-index: 0;
+  background: pink;
+  float: left;
+  overflow: hidden;
+}
+div.image-box-1 img {
+    width: 100%;
+    height: auto;
+}
+.image-box-2 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #999;
+  margin: 6px;
+  z-index: 0;
+  float: left;
+  overflow: hidden;
+  background-size: cover;
+}
+div.image-box-2 img {
+  width: 180%;
+  height: auto;
+  background-position: center bottom;
+}
+.responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+.modal-content {
+        width: 100%;
+    }
+
+div.desc {
+  display: none;
+}
+}
+@media only screen and (max-width: 400px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .image-gallery-responsive {
+  margin-top: 60px;
+}
+  .image-box-1, .image-box-2 {
+  width: 300px;
+  background: pink;
+  overflow: hidden;
+  background-size: cover;
+}
+  div.image-box-1 img {
+    width: 155%; 
+    height: auto;
+    background-size: cover;
+    background-position: right;
+}
+ .responsive {
+    width: 100%;
+    }
+ .greeting-box {
+    width: 88%;
+    margin-top: 80px;
+ }
+}
+
+/* contact */ 
+.contact-body {
+  background-image: url("images/background.gif");
+  background-color: #cccccc;
+}
+.pagename-contact {
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.greeting-contact {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: 'futura', sans-serif;
+  color: lightblue;
+  font-size: 14px;
+  padding: 10px;
+}
+.desktop-contact a {
+  background: transparent;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  list-style: none;
+  width: 24.5%;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+}
+.desktop-contact a:first-child {
+  color:lightblue;
+}
+
+.desktop-contact a:hover {
+  color: pink;
+}
+.desktop-contact {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  float: center;
+}
+textarea,
+.email-element {
+  text-align: center;
+  border: 0.5px dashed #999;
+  font-family: 'Roboto', sans-serif;
+  color: #999;
+  width: 80%;
+  margin-left: 120px;
+  background-color: transparent;
+}
+.submit-button {
+  border : solid 0.5px lightblue;
+  border-radius : 3px;
+  -moz-border-radius : 3px;
+  font-size : 15px;
+  color : lightblue;
+  font-style: bold;
+  padding : 6px 15px;
+  background-color : transparent;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 570px;
+  text-align: center;
+}
+.submit-button:hover {
+  background-color: lightblue;
+  color: white;
+}
+.social-button {
+  width: 100%;
+  background-color: transparent;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.social-button a {
+  color: lightblue;
+  padding: 10px;
+  float:right;
+}
+.social-button a:hover  {
+  color: #999;
+}
+
+@media only screen and (max-width: 724px) {
+  .desktop-contact a {
+    width: 45%;
+    display: inline-block;
+    position: relative;
+  }
+  textarea,
+  .email-element {
+    margin-left: 40px;
+  }
+  .submit-button {
+    float: left;
+    margin-left: 280px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .desktop-contact a {
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+  .submit-button {
+    margin-left: 140px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

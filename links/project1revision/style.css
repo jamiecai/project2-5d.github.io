@@ -1,0 +1,232 @@
+body {
+	width: 90%;
+    height: 60%;
+}
+
+div.img {
+    display: inline-block !important;
+}
+.site-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pagename {
+	padding: 50px 15px;
+    color: pink;
+    font: 30px Gill Sans;
+    list-style: none;
+    width: 100px;
+}
+
+.pagename-xiaolingcai {
+    margin-top: 50px;
+    padding: 30px 15px;
+    color: pink;
+    font: 30px Gill Sans;
+    display: block;
+}
+
+.NEU18{
+    font-size: 15px;
+    color: pink;
+    display: inline-block;
+}
+
+.pagename-nav {
+    color: pink;
+    font: 30px Gill Sans;
+    width: 100px;   
+    display: block;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.float{
+    width: 300px;
+    padding: 50px 15px;
+    color: pink;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid pink; 
+    float: left;
+    margin-top: -50px; 
+}
+
+.float1{
+    width: 300px;
+    float: left;
+    padding: 50px 15px;
+    color: pink;
+    margin-top: 20px;
+    font: 16px Gill Sans !important;
+    display: inline-block;
+    border: 1px solid pink; 
+    float: left;
+    margin-left: 200px; 
+    font-family: 'Slabo 27px', serif;
+}
+
+.float2{
+    width: 150px;
+    float: right; 
+    color: pink;  
+    display: inline-block;
+    border: 1px solid pink; 
+    font-family: 'Slabo 27px', serif;
+    padding: 10px 10px 10px 10px;
+    margin: -300px -30px 0 100px;
+}
+
+.float3{
+    float: right;
+    margin: 0 100px 10px 10px;    
+    color: pink;  
+    display: inline-block;
+    border: 1px solid pink; 
+    font-family: 'Slabo 27px', serif;
+    margin: 5px 0px 0px 400px;
+}
+
+.float4{
+    width: 150px;
+    float: right; 
+    color: pink;  
+    display: inline-block;
+    border: 1px solid pink; 
+    font-family: 'Slabo 27px', serif;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+
+.float5{
+    width: 300px;
+    float: right; 
+    color: pink;  
+    display: inline-block;
+    border: 1px solid pink; 
+    font-family: 'Slabo 27px', serif;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 20px 30px 0px;
+}
+
+.nav-home {
+    float: left;
+    padding: 15px 0;
+    margin: 0;
+    margin-top: 200px; 
+    text-decoration: none;
+    color: pink;
+}
+
+.nav {
+    float: left;
+    padding: 15px 0;
+    margin: 0;
+    margin-top: 15px; 
+    text-decoration: none;
+    color: pink;
+    margin: -200px 10px 20px 30px;
+}
+
+.aboutnav {
+    float: right;
+    padding: 15px 0;
+    margin: 0;
+    margin-top: 15px; 
+    text-decoration: none;
+    color: pink;
+    margin: -200px 10px 20px 30px;
+}
+
+.subnav {
+    left: -20px;
+    top: 0px;
+    width: 100px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: pink;
+}
+
+.subnav-link a {
+    font-size: 16px;
+    display: none;
+    position: relative;
+    width: 100px;
+    padding: 1px 20px;
+    color: pink;
+    text-decoration: none;
+    width: 150px;
+    list-style: ;
+}
+
+.subnav-link:hover a {
+    background: pink;
+    color: #fff;
+}
+
+.pagename-nav:hover .subnav-link a {
+    display: block;
+}
+
+
+.about {
+    padding: 30px 15px;
+    color: pink;
+    margin-top: 60px;
+    font: 30px Gill Sans;
+}
+
+.aboutnav-link {
+    display: block;
+    font: 16px Gill Sans;
+    padding: 5px 50px;
+    width: 150px;
+    margin-right: -4px;
+    position: relative;
+}
+
+.aboutnav-link a {
+    color: pink;
+    text-decoration: none;
+}
+
+.aboutnav-link:hover {
+    background: pink;
+    color: #fff;
+}
+
+.aboutnav-link:hover a {
+    color: #fff;
+}
+
+.email {
+    color: pink;
+    margin-left: 80px;
+    margin-top: 20px;
+    font: 16px Gill Sans;
+    display: block;
+    color: pink;
+}
+
+.background {
+    width:700px; 
+    height: 90%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.contact-nav {
+    color: pink;
+    font: 30px Gill Sans;
+    width: 100px;   
+    display: block;
+    margin: 60px 0px 0px 80px;
+}
+
+.contact-nav:hover .subnav-link a {
+    display: block;
+}
+
